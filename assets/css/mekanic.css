@@ -1,0 +1,263 @@
+.services-page{
+    background-image: url(../img/services.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    height: 500px;
+    opacity: .9;
+    position: relative;
+}
+
+.bg-soft-services{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+
+.services-title{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, 100%);
+    color: #fff;
+}
+
+.card-border-bottom{
+    border-bottom: 2px solid #EF590A;
+}
+
+.mekanic-content{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.detail-title{
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+
+.test-list{
+    margin-bottom: 10px;
+}
+
+.test-list-item{
+    padding: 10px 0;
+}
+
+.list-style-type{
+    font-size: 1.3rem;
+}
+
+.list-style-item-text{
+    font-size: 1rem;
+    padding: 10px;
+    color: #242323;
+    text-decoration: none;
+    width: 100%;
+}
+
+.list-style-item-text:hover{
+    background-color: #EF590A;
+    color: #fff;
+}
+
+.mekanic-img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.test-form-button{
+    display: flex;
+    justify-content: center;
+}
+
+.test-form-button-link{
+    background-color: #EF590A;
+    color: #fff;
+    padding: 20px 50px;
+    margin: 10px 0;
+    border-radius: 30px;
+    transition: all .5s;
+}
+
+.test-form-button-link:hover{
+    background-color: #08445C;
+}
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+    .services-page{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .services-page{
+        height: 400px;
+    }
+
+    .feedback-form{
+        width: 70%;
+    }
+
+    .bank-iban{
+        width: 100%;
+    }
+
+    .test-form-button-link{
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .services-page {
+        height: 350px;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .detail-title{
+        margin: 15px 0;
+    }
+
+    .test-list-item {
+        padding: 5px 0;
+    }
+
+    .mekanic-img{
+        max-height: 250px;
+    }
+
+    .test-form-button-link{
+        padding: 15px 35px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .logo{
+        width: 130px;
+    }
+
+    .services-page {
+        height: 320px;
+    }
+
+    .nav-tabs-primary{
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .services-page {
+        height: 300px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .form-button{
+        padding: 5px 30px;
+    }
+
+    .test-form-button-link {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .services-page {
+        height: 280px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 280px;
+    }
+
+    .bank-iban img{
+        width: 80px;
+        height: 40px;
+    }
+
+    .mekanic-img {
+        max-height: 210px;
+    }
+
+    .test-form-button-link {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+    .services-page {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 260px;
+    }
+
+    .bank-iban img {
+        width: 70px;
+        height: 35px;
+    }
+    
+    .mekanic-img {
+        max-height: 180px;
+    }
+}
+
+/********** Media Queries End **********/

@@ -1,0 +1,322 @@
+.contact-page{
+    background-image: url(../img/contact.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    height: 500px;
+    opacity: .9;
+    position: relative;
+}
+
+.bg-soft-services{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+
+.services-title{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, 100%);
+    color: #fff;
+}
+
+.services-text{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.nav-tabs-primary{
+    border: 1px solid #D3D2CD;
+    height: 300px;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.border-dashed{
+    border: 1px dashed #D3D2CD;
+    margin: 3px;
+}
+
+.nav-item-primary:hover .nav-link-primary{
+    color: #fff !important;
+}
+
+.nav-link-primary{
+    color: #242323 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    margin: 0;
+    padding: 8px !important;
+}
+
+.nav-link-primary:hover{
+    background-color: #EF590A !important;
+}
+
+.nav-link-primary.active{
+    color: #fff !important;
+    background-color: #EF590A !important;
+}
+  
+.contact-title{
+    font-size: 1.5rem ;
+    margin-bottom: 20px;
+}
+
+.contact-text{
+    font-size: 1rem;
+    margin-bottom: 0 !important;
+}
+
+.contact-link{
+    font-size: 1rem;
+    color: #212529;
+    text-decoration: none;
+}
+
+.contact-link:hover{
+    opacity: .7;
+}
+
+.map-iframe{
+    width: 100%;
+    height: 450px;
+}
+
+.document{
+    display: flex;
+    align-items: center;
+    border: 1px solid #D3D2CD;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.feedback-form{
+    background-color: #ECEEEF;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.application-label{
+    font-size: .8rem;
+    font-weight: 400;
+    color: #093649;
+}
+
+.application-input{
+    padding: 1.625rem;
+    background-color: #ECEEEF;
+    border-radius: 0;
+    border-color: #A4B0B8;
+    outline: #A4B0B8;
+}
+
+.application-input option{
+    color: #2E2D2D;
+}
+
+.application-input:hover{
+    border: 1px solid #758794;
+    box-shadow: 0 0 0 0.05rem rgb(164 176 184 / 100%);
+
+}
+
+.application-input:focus{
+    background-color: #ECEEEF;
+    border-color: #A4B0B8;
+    box-shadow: 0 0 0 0.1rem rgb(164 176 184 / 100%);
+}
+
+.form-button{
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: 1px solid #CED4DA;
+    background: transparent;
+    color: #EF590A;
+    transition: all .6s ease;
+}
+
+.form-button:hover{
+    background-color: #EF590A;
+    color: #fff;
+}
+
+.bank-iban{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 75%;
+    border: 1px solid #E3E3E0;  
+    padding: 10px;
+    border-radius: 2;
+    margin-bottom: 10px;
+}
+
+.bank-iban img{
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.iban{
+    font-size: 1rem;
+}
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+    .contact-page{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .contact-page{
+        height: 400px;
+    }
+
+    .feedback-form{
+        width: 70%;
+    }
+
+    .bank-iban{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .contact-page {
+        height: 350px;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    .feedback-form{
+        width: 100%;
+    }
+
+    .bank-iban img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .logo{
+        width: 130px;
+    }
+
+    .contact-page {
+        height: 320px;
+    }
+
+    .nav-tabs-primary{
+        flex-direction: row;
+        height: auto;
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .contact-page {
+        height: 300px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .form-button{
+        padding: 5px 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .contact-page {
+        height: 280px;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 280px;
+    }
+
+    .bank-iban img{
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+    .contact-page {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 260px;
+    }
+    
+    .bank-iban img {
+        width: 70px;
+        height: 35px;
+    }
+}
+
+/********** Media Queries End **********/

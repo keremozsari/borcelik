@@ -1,0 +1,336 @@
+.services-page{
+    background-image: url(../img/services.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px;
+    height: 500px;
+    opacity: .9;
+    position: relative;
+}
+
+.bg-soft-services{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .6);
+}
+
+.services-title{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, 100%);
+    color: #fff;
+}
+
+.services-text{
+    text-align: center;
+    margin: 40px auto;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.services-card{
+    margin: 40px 0;
+    position: relative;
+}
+
+.services-img{
+    width: 100%;
+}
+
+.services-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-detail{
+    position: absolute;
+    bottom: 0;
+    background-color: #A4B0B8;
+    width: 100%;
+    height: 110px;
+    transition: all .5s ease;
+}
+
+.card-number{
+    font-size: 4rem;
+    padding: 10px;
+    color: #C6CFD5;
+}
+
+.card-text{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    color: #474F55;
+    transition: all .6s ease;
+}
+
+.card-border-bottom{
+    border-bottom: 2px solid #EF590A;
+}
+
+.card-button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #093649;
+    position: absolute;
+    left: 90px;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s ease;
+    font-size: .9rem;
+}
+
+.card-button:hover{
+    background-color: #EF590A;
+    color: #fff;
+}
+
+.services-card:hover .card-detail{
+    height: 150px;
+}
+
+.services-card:hover .card-text{
+    top: 10px;
+    color: #fff;
+}
+
+.services-card:hover .card-button{
+    visibility: visible;
+    opacity: 1;
+}
+
+.devices-list-title{
+    display: flex;
+    justify-content: center;
+    color: #1C252B;
+}
+
+.devices-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.devices-list ul{
+    margin: 30px;
+}
+
+.devices-list ul li{
+    list-style-type: disc;
+    font-size: .9rem;
+    padding: 2px 0;
+}
+
+/********** Media Queries **********/
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 15px !important;
+    }
+
+    .services-page{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 14px !important; 
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .services-page{
+        height: 400px;
+    }
+
+    .services-text{
+        width: 60%;
+    }
+
+    .card-detail{
+        height: 90px;
+    }
+
+    .services-card:hover .card-detail{
+        height: 125px;
+    }
+
+    .card-text{
+        top: 8px;
+        left: 3px;
+        line-height: 20px;
+    }
+
+    .card-button{
+        top: 70px;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 14px !important;
+    }
+
+    .services-page {
+        height: 350px;
+        background-position: top;
+        background-size: auto;
+    }
+
+    .services-text{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .card-detail{
+        height: 90px;
+    }
+
+    .services-card{
+        margin: 20px 0;
+    }
+
+    .services-card:hover .card-detail{
+        height: 125px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 13px !important;
+    }
+
+    .logo{
+        width: 130px;
+    }
+
+    .services-page {
+        height: 320px;
+    }
+
+    .services-text {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .card-detail{
+        height: 80px;
+    }
+
+    .services-card:hover .card-detail{
+        height: 110px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 12px !important;
+    }
+
+    .services-page {
+        height: 300px;
+    }
+
+    .card-text{
+        line-height: 16px;
+    }
+
+    .services-card{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 11px !important;
+    }
+
+    .services-page {
+        height: 280px;
+    }
+
+    .card-detail {
+        height: 75px;
+    }
+
+    .services-card:hover .card-detail{
+        height: 100px;
+    }
+
+    .card-button{
+        top: 60px;
+    }
+}
+
+@media screen and (max-width:415px) {
+    html{
+        font-size: 10px !important;
+    }
+
+    .logo{
+        width: 120px;
+    }
+
+    .services-page {
+        height: 270px;
+    }
+
+    .card-detail {
+        height: 70px;
+    }
+
+    .services-card:hover .card-detail{
+        height: 95px;
+    }
+
+    .card-text{
+        line-height: 12px;
+    }
+
+    .card-button {
+        top: 55px;
+        left: 75px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html{
+        font-size: 9px !important;
+    }
+
+    .card-detail {
+        height: 60px;
+    }
+
+    .services-card:hover .card-detail{
+        height: 85px;
+    }
+
+    .card-text{
+        line-height: 11px;
+    }
+    
+    .card-button {
+        top: 50px;
+        left: 58px;
+    }
+}
+
+/********** Media Queries End **********/
